@@ -43,7 +43,7 @@ const Table: React.FC<Props> = ({ data }) => {
         </tr>
       </thead>
       {dataPaging?.map((item: any) => (
-        <tbody className="table-body">
+        <tbody key={item.id} className="table-body">
           <tr className="table-row">
             <td className="table-cell">{item?.name || ""}</td>
             <td className="table-cell">{item?.email || ""}</td>
