@@ -1,4 +1,3 @@
-import React, { ReactElement } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "../views/practice-1";
 import Practice2 from "../views/practice-2";

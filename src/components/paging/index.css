@@ -1,0 +1,9 @@
+.paginationWrapper {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+  }
+  .separator {
+    width: 1rem;
+    margin: 0 0.25rem;
+  }
