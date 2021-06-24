@@ -1,19 +1,19 @@
-.practice-1{
+.practice-1 {
   margin: auto;
   max-width: 500px;
   display: block;
 }
-.btn-group{
+.btn-group {
   text-align: center;
   display: flex;
   justify-content: center;
   margin: 20px;
 }
-.practice-1 .box{
+.practice-1 .box {
   text-align: center;
 }
 
-.box{
+.box {
   width: 160px;
   margin: auto;
   padding: 20px;

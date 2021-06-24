@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./index.css";
-import Table from '../../components/table'
+import Table from "../../components/table";
 
 function Practice() {
   const [data, setData] = useState([]);
@@ -20,11 +20,7 @@ function Practice() {
   return (
     <div className="App">
       <div className="container">
-        <div className="practice-2">
-          {data && (
-            <Table data={data}/>
-          )}
-        </div>
+        <div className="practice-2">{data && <Table data={data} />}</div>
       </div>
     </div>
   );

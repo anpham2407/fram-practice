@@ -1,4 +1,4 @@
-import React, { useState, useMemo }  from "react";
+import React, { useState, useMemo } from "react";
 import "./index.css";
 import { Pagination } from "./../../components/paging";
 const alignIcon = "../../assets/icons/left-align.svg";
@@ -8,20 +8,20 @@ export interface Props {
   data: any;
 }
 
-const getData = (data: [], page : any) => {
-    const newData: string[] = [];
-    if (data.length > 0) {
-        for (let i = page; i < page + 5; i++) {
-            newData.push(data[i - 1]);
-        }
+const getData = (data: [], page: any) => {
+  const newData: string[] = [];
+  if (data.length > 0) {
+    for (let i = page; i < page + 5; i++) {
+      newData.push(data[i - 1]);
     }
-    return newData
-}
+  }
+  return newData;
+};
 const Table: React.FC<Props> = ({ data }) => {
   const [page, setPage] = useState(1);
   const totalPages = Math.round(data.length / 5);
   const handlePages = (updatePage: number) => setPage(updatePage);
-  const dataPaging = useMemo(() => getData(data , page), [data, page]);
+  const dataPaging = useMemo(() => getData(data, page), [data, page]);
   return (
     <table className="table">
       <thead className="table-head">

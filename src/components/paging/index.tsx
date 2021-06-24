@@ -1,5 +1,5 @@
-import React from 'react';
-import classNames from 'classnames';
+import React from "react";
+import classNames from "classnames";
 export interface Props {
   page: number;
   totalPages: number;
@@ -17,7 +17,7 @@ export const PaginationComponent: React.FC<Props> = ({
           <button
             onClick={() => handlePagination(page - 1)}
             type="button"
-            className={classNames(["pageItem", "sides"].join(' '))}
+            className={classNames(["pageItem", "sides"].join(" "))}
           >
             &lt;
           </button>
@@ -54,7 +54,7 @@ export const PaginationComponent: React.FC<Props> = ({
           <button
             onClick={() => handlePagination(page)}
             type="button"
-            className={["pageItem", "active"].join(' ')}
+            className={["pageItem", "active"].join(" ")}
           >
             {page}
           </button>
@@ -91,7 +91,7 @@ export const PaginationComponent: React.FC<Props> = ({
           <button
             onClick={() => handlePagination(page + 1)}
             type="button"
-            className={["pageItem", "sides"].join(' ')}
+            className={["pageItem", "sides"].join(" ")}
           >
             &gt;
           </button>
