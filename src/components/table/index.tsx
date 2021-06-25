@@ -1,8 +1,7 @@
 import React, { useState, useMemo } from "react";
 import "./index.css";
 import { Pagination } from "./../../components/paging";
-const alignIcon = "../../assets/icons/left-align.svg";
-const plusIcon = "../../assets/icons/plus.svg";
+import { ALIGN_ICON, PLUS_ICON } from '../../constant';
 
 export interface Props {
   data: any;
@@ -36,7 +35,7 @@ const Table: React.FC<Props> = ({ data }) => {
           </th>
           <th className="table-cell table-cell-head" scope="col">
             <i className="icon svg">
-              <img alt="" src={alignIcon} />
+              <img alt="align icon" src={ALIGN_ICON} />
             </i>
             Position
           </th>
@@ -57,7 +56,7 @@ const Table: React.FC<Props> = ({ data }) => {
             <div className="row">
               <div className="add-new">
                 <i className="icon svg">
-                  <img alt="" src={plusIcon} />
+                  <img alt="plus icon" src={PLUS_ICON} />
                 </i>
                 <span>New</span>
               </div>
