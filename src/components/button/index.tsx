@@ -4,7 +4,6 @@ import "./index.css";
 interface Props {
   children: ReactNode;
   onClick: (e: object) => void;
-  // any other props that come into the component
 }
 
 const RippleButton: React.FC<Props> = ({ children, onClick }) => {
@@ -48,4 +47,4 @@ const RippleButton: React.FC<Props> = ({ children, onClick }) => {
   );
 };
 
-export default RippleButton;
+export default React.memo(RippleButton);

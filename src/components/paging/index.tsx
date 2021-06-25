@@ -100,4 +100,4 @@ export const PaginationComponent: React.FC<Props> = ({
     </div>
   );
 };
-export const Pagination = PaginationComponent;
+export const Pagination = React.memo(PaginationComponent);
